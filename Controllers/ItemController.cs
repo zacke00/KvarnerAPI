@@ -56,7 +56,7 @@ namespace KvarnerAPI.Controllers
 
         [HttpGet]
         [Route("GetImage/{id}")]
-        public async Task<ActionResult<Items>> GetImage(int id)
+        public async Task<ActionResult> GetImage(int id)
         {
             var arch = await context.Items.FindAsync(id);
             if (arch != null)
