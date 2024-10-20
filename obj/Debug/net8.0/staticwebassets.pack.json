@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/css/docs.css",
+      "PackagePath": "staticwebassets/css/docs.css"
+    },
+    {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/css/index.css",
+      "PackagePath": "staticwebassets/css/index.css"
+    },
+    {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/docs.html",
+      "PackagePath": "staticwebassets/docs.html"
+    },
+    {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.KvarnerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.KvarnerAPI.props",
+      "PackagePath": "build\\KvarnerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.KvarnerAPI.props",
+      "PackagePath": "buildMultiTargeting\\KvarnerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.KvarnerAPI.props",
+      "PackagePath": "buildTransitive\\KvarnerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

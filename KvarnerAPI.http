@@ -1,0 +1,6 @@
+@KvarnerAPI_HostAddress = http://localhost:5282
+
+GET {{KvarnerAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

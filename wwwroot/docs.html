@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey&family=Pacifico&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/docs.css">
+    <script defer src="./script/docs.js"></script>
+    <script defer src="https://kit.fontawesome.com/57e8ebbe87.js" crossorigin="anonymous"></script>
+    <title>docs api</title>
+</head>
+<body>
+    <div id="body">
+    <header>
+        
+            <div id="menu-header">
+                <a id="docs" href="Index.html"><i class="fa-solid fa-house-user"></i>Home</a>
+            </div>
+                <div id="header">
+                    <h1 id="h1-header-introduction">Documentations</h1>
+            </div>
+        
+    </header>
+    <main>
+        <div id="row">
+            <div id="div-ul-groups-one" >
+                <h3 id="introduction">Introduction</h3>
+                <ul id="ul-group-one">
+                    <li id="li-group-one"><a href="#info">Information</a></li>
+                    <hr color="#27272c">
+                    <li id="li-group-one"><a href="#setup">Setup</a></li>
+                    <hr color="#27272c">
+                    <li id="li-group-one"><a href="#how-to-use">How to use the API</a></li>
+                    <hr color="#27272c">
+                    <li id="li-group-one"><a href=""></a></li>
+                    <li id="li-group-one"><a href=""></a></li>
+                    <li id="li-group-one"><a href=""></a></li>
+                    <li id="li-group-one"><a href=""></a></li>
+                </ul>
+            </div>
+
+            <div id="main-content">
+                
+                    <h3 id="info">informations</h3>
+                    <hr color=" #3e3e46">
+                    <span id="span-information">
+                        <p>I started up by creating a API that was supposed to have alot more than just characters in video games. 
+                            After alot of pain and struggle i had to make a change where i wanted <i>games</i> to be apart of the api aswell.
+                            I had to make alot of changes to the code and the database.
+                            When i started of i had the idea that i wanted to use <i>Character</i> and <i>Games</i> as a starting point.
+                            I quickly realised after i started that i needed to drop the <i>Games</i> database and only focus on the <i>Character</i> database.
+
+                        </p>
+                    </span>
+                    <h3 id="setup">Setup</h3>
+                    <span id="span-setup">
+                        <hr color="#3e3e46">
+                        <p>When i first started of i had both <i>Characters</i> and <i>Games</i>. The first thing i started doing was create the API and React app.
+                            when they were both up and going i installed all the right packages. When the packages were installed i started to create some base folders for the project.
+                            The first actual file i created was how the information on the <i>Characters</i> were going to look like. The ICharacter interface was the first one.
+                             After i had the Databases up and running i made the controllers that you can find in the Controller folder in the API directory
+                        I then went to the react folder and started to see how i would be able to gain access to the API database and what it has inside.
+                            
+                        </p >
+                    </span>
+                    <span >
+                        <h3 id="how-to-use">How to use the API</h3>
+                        <hr color="#3e3e46">
+                        <p>The setup for the <i>Characters</i> that you will implement needs to have the setup that you see below.
+                        You cannot add a string for image unfortunately that will be implemented later on in the API.
+                        <br>
+                        <br>
+                        ID: has a auto increment so you dont need to worry about that.
+                        <br>
+                        Name: is a string and can be null if you dont have a name for the character. 
+                        However if you dont input Name you will neither be able to have an image to the character.
+                        <br>
+                        Game: is a string and can be null if you dont have a game for the character.
+                        </p>
+                        <pre>
+                            <code>
+"ICharacter interface"
+{
+    "id": number,
+    "name": string,
+    "game": string 
+    "image": string, //casting name image
+}
+                            </code>
+                        </pre>
+                    </span>
+                    <span>
+                        <p>
+                            You have a few ways to use the API HTTP calls. <br> 
+                            The existing ones are ways to gather the information from the database. <br>
+                            Add information to the database. <br>
+                            Delete information from the database. <br>
+                            Alter some of the information in the database. <br>
+                            Collect information from the database based on the ID. <br>
+                            Insert information to the database while adding a image with the character. <br>
+                            You can also get information about a character by the name
+
+                            
+                            
+                            <h4 >HTTP Calls</h4>
+                        </p><p>
+                            Get <br> 
+                            Post <br> 
+                            Delete <br> 
+                            Put <br> 
+                            GetById <br>
+                            PostImage - with name<br>
+                            getByName <br>
+
+                        </p>
+                        <pre>
+                            <code>
+"HTTP Calls"
+{
+    "Get": "https://localhost:****/api/characters",
+    "Post": "https://localhost:****/api/characters",
+    "Delete": "https://localhost:****/api/characters",
+    "Put": "https://localhost:****/api/characters",
+
+    "GetById": "https://localhost:****/api/characters/GetById/{id}",
+    "PostImage": "https://localhost:****/api/characters/uploadImage/{name}",
+    "getByName": "https://localhost:****/api/characters/GetByName/{name}"
+
+}
+                            </code>
+                        </pre>
+                    </span>
+                    <span>
+                    <h3>ending</h3>
+                    <hr color="#3e3e46">
+                    <p>
+                        With that im ending this as i have alot of work to do. I will be adding alot more to this API and i will be adding alot more to the documentation.
+                    </p>
+                </span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+
+</div>
+</body>
+</html>
