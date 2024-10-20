@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/docs.html"
     },
     {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/Capri.jpg",
+      "PackagePath": "staticwebassets/images/Capri.jpg"
+    },
+    {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/Pizza party.jpg",
+      "PackagePath": "staticwebassets/images/Pizza party.jpg"
+    },
+    {
       "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/sa.jpg",
       "PackagePath": "staticwebassets/images/sa.jpg"
     },

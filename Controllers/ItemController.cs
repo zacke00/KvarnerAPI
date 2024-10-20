@@ -56,20 +56,27 @@ namespace KvarnerAPI.Controllers
 
         [HttpGet]
         [Route("GetImage/{id}")]
-        public async Task<ActionResult> GetImage(int id)
+        public async Task<IActionResult> GetImage(int id)
         {
-            var arch = await context.Items.FindAsync(id);
-            if (arch != null)
+            var item = await context.Items.FindAsync(id);
+            if (item != null && !string.IsNullOrEmpty(item.Image))
             {
-                var path = Path.Combine(hosting.WebRootPath, "images", arch.Image);
-                var buffer = System.IO.File.ReadAllBytes(path);
-                return File(buffer, "image/jpg");
+                // Construct the path to the image file using the actual image name
+                var imagePath = Path.Combine(hosting.WebRootPath, "images", item.Image);
+                
+                // Check if the file exists
+                if (System.IO.File.Exists(imagePath))
+                {
+                    var imageBytes = System.IO.File.ReadAllBytes(imagePath);
+                    return File(imageBytes, "image/jpeg");
+                }
+                else
+                {
+                    return NotFound($"Image file for item with ID {id} was not found.");
+                }
             }
 
-            else
-            {
-                return NotFound();
-            }
+            return NotFound($"Item with ID {id} does not have an associated image.");
         }
 
         // POST: api/Item
