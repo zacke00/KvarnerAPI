@@ -95,6 +95,26 @@ namespace KvarnerAPI.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("UploadImage/{name}")]
+        public async Task<ActionResult> UploadImage(IFormFile file,string name)
+        {
+            try{
+
+            string webRootPath = hosting.WebRootPath;
+            string absolutePath = Path.Combine($"{webRootPath}/images/{name}.jpg");
+
+            using(var fileStream = new FileStream(absolutePath, FileMode.Create)) 
+            {
+                file.CopyTo(fileStream);
+            }
+            return Ok();
+            } catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
         // PUT: api/Item/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutItem(int id, Items item)

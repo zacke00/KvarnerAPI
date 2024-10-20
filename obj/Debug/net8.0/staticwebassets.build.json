@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1Jmfof3t2p5DgpR2Oc7SILOlSb9AnAxC5KPwaxWJjbk=",
+  "Hash": "pBEnmpqEhbpNPi7/PXOyxgTuwWJXRE+5Ub0fx90E0bU=",
   "Source": "KvarnerAPI",
   "BasePath": "_content/KvarnerAPI",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/docs.html"
+    },
+    {
+      "Identity": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/sa.jpg",
+      "SourceId": "KvarnerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/zakariaberglund/KvarnerAPI/wwwroot/",
+      "BasePath": "_content/KvarnerAPI",
+      "RelativePath": "images/sa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/sa.jpg"
     },
     {
       "Identity": "/Users/zakariaberglund/KvarnerAPI/wwwroot/index.html",

@@ -6,13 +6,24 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policies => policies.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
 });
 builder.Services.AddDbContext<ItemContext>(options =>
 {
-    var dbPath = Path.Combine(AppContext.BaseDirectory, "Databases", "Items.db");
-    Directory.CreateDirectory(Path.GetDirectoryName(dbPath)); // Ensure the directory exists
+    // Define the path to the database file
+    var projectRoot = Directory.GetCurrentDirectory();
+    var dbPath = Path.Combine(projectRoot, "Databases", "Item.db");
+    
+    // Ensure the directory exists
+    Directory.CreateDirectory(Path.GetDirectoryName(dbPath)!);
+    
     options.UseSqlite($"Data Source={dbPath}");
+    Console.WriteLine($"Database path: {dbPath}");
 });
 
 builder.Services.AddControllers();
@@ -31,8 +42,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowAll");
 app.UseStaticFiles();
+
 app.UseHttpsRedirection();
+
 app.UseAuthorization();
 
 app.MapControllers();
