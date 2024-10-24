@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/images/Pizza party.jpg"
     },
     {
+      "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/This.jpg",
+      "PackagePath": "staticwebassets/images/This.jpg"
+    },
+    {
       "Id": "/Users/zakariaberglund/KvarnerAPI/wwwroot/images/sa.jpg",
       "PackagePath": "staticwebassets/images/sa.jpg"
     },
