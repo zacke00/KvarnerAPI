@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using KvarnerAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
 namespace KvarnerAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -80,6 +83,7 @@ namespace KvarnerAPI.Controllers
         }
 
         // POST: api/Item
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<Items>> PostItem(Items item)
         {
@@ -102,6 +106,7 @@ namespace KvarnerAPI.Controllers
             }
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("UploadImage/{name}")]
         public async Task<ActionResult> UploadImage(IFormFile file,string name)
@@ -123,6 +128,7 @@ namespace KvarnerAPI.Controllers
         }
 
         // PUT: api/Item/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutItem(int id, Items item)
         {
@@ -162,6 +168,7 @@ namespace KvarnerAPI.Controllers
         }
 
         // DELETE: api/Item/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {

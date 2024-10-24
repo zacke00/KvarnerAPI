@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KvarnerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b8f1fa1d293ad13cabdae93a9a51fbea7e46ea6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18345b30067f32c79a0e9465ccd804a485befd88")]
 [assembly: System.Reflection.AssemblyProductAttribute("KvarnerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KvarnerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

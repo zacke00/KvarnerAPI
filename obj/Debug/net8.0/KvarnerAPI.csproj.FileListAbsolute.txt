@@ -134,3 +134,11 @@
 /Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/KvarnerAPI.staticwebassets.runtime.json
 /Users/zakariaberglund/KvarnerAPI/obj/Debug/net8.0/KvarnerAPI.sourcelink.json
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/zakariaberglund/KvarnerAPI/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
